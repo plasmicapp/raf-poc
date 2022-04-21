@@ -1,5 +1,9 @@
 /** @format */
 
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 @font-face {
   font-family: HCoGothamSSmLight;
   src: url("/fonts/DE8E22F5BD5116D3D.woff") format("woff");
