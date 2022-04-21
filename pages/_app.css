@@ -58,7 +58,7 @@
 @font-face {
   font-family: ProximaNovaThin;
   src: url("/fonts/proximaNova-thin.otf");
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
   font-display: auto;
 }
@@ -82,7 +82,15 @@
 @font-face {
   font-family: "Proxima Nova";
   src: url("/fonts/proximaNova-medium.otf");
-  font-weight: 700;
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/proximaNova-medium.otf");
+  font-weight: 600;
   font-style: normal;
   font-display: auto;
 }
@@ -98,7 +106,7 @@
 @font-face {
   font-family: "Proxima Nova";
   src: url("/fonts/proximaNova-bolder.otf");
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
   font-display: auto;
 }
