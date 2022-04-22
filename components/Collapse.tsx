@@ -14,9 +14,9 @@ function ArrowDown() {
       <path
         d="M18.5 6.00003L10.4597 14L2.5 6.00003"
         stroke="#222222"
-        stroke-width="1.25"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -41,7 +41,7 @@ export default function Collapse({
       <div style={{ display: "flex", alignItems: "center" }} onClick={toggle}>
         <div style={{ flex: 1 }}>{header}</div>
         <div style={{ transform: actuallyOpen ? "rotate(180deg)" : undefined }}>
-          {<ArrowDown />}
+          <ArrowDown />
         </div>
       </div>
       <div
