@@ -1,6 +1,7 @@
 /** @format */
 
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import Collapse from "./components/Collapse";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -25,4 +26,18 @@ export const PLASMIC = initPlasmicLoader({
 // http://localhost:3000/plasmic-host).  See
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
-// PLASMIC.registerComponent(...);
+PLASMIC.registerComponent(Collapse, {
+  name: "Collapse",
+  description: "A collapsible component",
+  props: {
+    children: {
+      type: "slot",
+      defaultValue: "Collapse component body",
+    },
+    header: {
+      type: "slot",
+      defaultValue: "Collapse component header",
+    },
+    previewOpen: "boolean",
+  },
+});
