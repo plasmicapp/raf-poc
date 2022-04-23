@@ -1,5 +1,6 @@
 /** @format */
 
+import { usePlasmicCanvasContext } from "@plasmicapp/loader-nextjs";
 import { ReactNode, useState } from "react";
 
 function ArrowDown() {
@@ -35,10 +36,14 @@ export default function Collapse({
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const actuallyOpen = isOpen || previewOpen;
+  const inEditor = !!usePlasmicCanvasContext();
+  const actuallyOpen = isOpen || (inEditor && previewOpen);
   return (
     <div className={className}>
-      <div style={{ display: "flex", alignItems: "center" }} onClick={toggle}>
+      <div
+        style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+        onClick={toggle}
+      >
         <div style={{ flex: 1 }}>{header}</div>
         <div style={{ transform: actuallyOpen ? "rotate(180deg)" : undefined }}>
           <ArrowDown />
