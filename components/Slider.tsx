@@ -67,19 +67,19 @@ export default function Slider({
   children: ReactNode;
 }) {
   const ctx = useContext(SliderContext);
-  if (!ctx) {
-    return <div>Slider must be placed inside a SliderProvider</div>;
-  }
   const ref = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const el = ref.current;
     if (el) {
       el.scroll({
-        left: el.scrollLeft + 400 * (ctx.lastOp === "right" ? +1 : -1),
+        left: el.scrollLeft + 400 * (ctx?.lastOp === "right" ? +1 : -1),
         behavior: "smooth",
       });
     }
-  }, [ctx.offset, ctx.lastOp, ctx.counter]);
+  }, [ctx?.offset, ctx?.lastOp, ctx?.counter]);
+  if (!ctx) {
+    return <div>Slider must be placed inside a SliderProvider</div>;
+  }
   return (
     <div className={className} ref={ref}>
       {children}
