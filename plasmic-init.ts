@@ -2,6 +2,7 @@
 
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import Collapse from "./components/Collapse";
+import Slider, { SliderButton, SliderProvider } from "./components/Slider";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -39,5 +40,47 @@ PLASMIC.registerComponent(Collapse, {
       defaultValue: "Collapse component header",
     },
     previewOpen: "boolean",
+  },
+});
+
+PLASMIC.registerComponent(SliderProvider, {
+  name: "SliderProvider",
+  props: {
+    children: {
+      type: "slot",
+    },
+  },
+});
+
+PLASMIC.registerComponent(Slider, {
+  name: "CustomSlider",
+  defaultStyles: {
+    overflowX: "auto",
+  },
+  props: {
+    children: {
+      type: "slot",
+    },
+  },
+});
+
+PLASMIC.registerComponent(SliderButton, {
+  name: "SliderButton",
+  props: {
+    action: {
+      type: "choice",
+      options: ["right", "left"],
+      defaultValue: "right",
+    },
+    children: {
+      type: "slot",
+      defaultValue: {
+        type: "text",
+        value: ">",
+        style: {
+          padding: "8px",
+        },
+      },
+    },
   },
 });
