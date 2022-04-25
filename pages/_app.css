@@ -9,7 +9,7 @@ html {
   src: url("/fonts/DE8E22F5BD5116D3D.woff") format("woff");
   font-weight: 200;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,7 +17,7 @@ html {
   src: url("/fonts/DE8E22F5BD5116D3D.woff") format("woff");
   font-weight: 200;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 /* @font-face {
@@ -26,7 +26,7 @@ html {
     url("/fonts/570CA1EE48C47A00E.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,7 +36,7 @@ html {
     url("/fonts/925CAC24B5DF95216.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -46,7 +46,7 @@ html {
     url("/fonts/1FC2048DDC78C280C.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -56,7 +56,7 @@ html {
     url("/fonts/48A830618C3986410.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 } */
 
 @font-face {
@@ -64,7 +64,7 @@ html {
   src: url("/fonts/proximaNova-thin.otf");
   font-weight: 100;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -72,7 +72,7 @@ html {
   src: url("/fonts/proximaNova-light.otf");
   font-weight: 300;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -80,7 +80,7 @@ html {
   src: url("/fonts/proximaNova-regular.otf");
   font-weight: 400;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -88,7 +88,7 @@ html {
   src: url("/fonts/proximaNova-medium.otf");
   font-weight: 500;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -96,7 +96,7 @@ html {
   src: url("/fonts/proximaNova-medium.otf");
   font-weight: 600;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -104,7 +104,7 @@ html {
   src: url("/fonts/proximaNova-bold.otf");
   font-weight: 700;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -112,7 +112,7 @@ html {
   src: url("/fonts/proximaNova-bolder.otf");
   font-weight: 800;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -122,7 +122,7 @@ html {
     url("/fonts/321BD7_1_0.woff2") format("woff2"),
     url("/fonts/321BD7_1_0.woff") format("woff");
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -132,7 +132,7 @@ html {
     url("/fonts/321BD7_0_0.woff2") format("woff2"),
     url("/fonts/321BD7_0_0.woff") format("woff");
   font-style: italic;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -142,6 +142,7 @@ html {
     url("/fonts/RFFont-Caption.woff2") format("woff2"),
     url("/fonts/RFFont-Caption.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -151,6 +152,7 @@ html {
     url("/fonts/RFFont-Italic.woff2") format("woff2"),
     url("/fonts/RFFont-Italic.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -160,6 +162,7 @@ html {
     url("/fonts/RFFont-Roman.woff2") format("woff2"),
     url("/fonts/RFFont-Roman.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 /* @font-face {
@@ -179,6 +182,7 @@ html {
     url("/fonts/RFFont-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -188,26 +192,31 @@ html {
     url("/fonts/RFFont-Roman.woff2") format("woff2"),
     url("/fonts/RFFont-Roman.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: GothamUltra;
   src: url("/fonts/GothamHTF-Ultra.3c29b2ae.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: GothamBold;
   src: url("/fonts/GothamHTF-Bold.a295ade8.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: GothamMedium;
   src: url("/fonts/GothamHTF-Medium.5ca919e8.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: GothamBook;
   src: url("/fonts/GothamHTF-Book.c3bf9b90.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -217,4 +226,5 @@ html {
     format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
