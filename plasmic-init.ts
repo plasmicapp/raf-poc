@@ -1,6 +1,7 @@
 /** @format */
 
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { ButtonAction } from "./components/ButtonAction";
 import Collapse from "./components/Collapse";
 import Slider, { SliderButton, SliderProvider } from "./components/Slider";
 
@@ -53,7 +54,7 @@ PLASMIC.registerComponent(SliderProvider, {
 });
 
 PLASMIC.registerComponent(Slider, {
-  name: "CustomSlider",
+  name: "Slider",
   defaultStyles: {
     overflowX: "auto",
   },
@@ -83,4 +84,12 @@ PLASMIC.registerComponent(SliderButton, {
       },
     },
   },
+});
+
+PLASMIC.registerComponent(ButtonAction, {
+  name: "ButtonAction",
+  props: {
+    children: "slot",
+  },
+  isAttachment: true,
 });
