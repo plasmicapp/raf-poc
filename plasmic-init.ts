@@ -4,6 +4,7 @@ import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import { ButtonAction } from "./components/ButtonAction";
 import Collapse from "./components/Collapse";
 import Slider, { SliderButton, SliderProvider } from "./components/Slider";
+import { registerAll } from "./components/strapi";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -93,3 +94,5 @@ PLASMIC.registerComponent(ButtonAction, {
   },
   isAttachment: true,
 });
+
+registerAll(PLASMIC);
